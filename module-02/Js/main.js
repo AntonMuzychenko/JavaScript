@@ -65,12 +65,16 @@
   
   Если пользователь нажмет Cancel, прекратить выполнение цикла.
 */
+
 const password = ["qwerty", "111qwe", "123123", "r4nd0mp4zzw0rd", "1"];
+
 console.log("password :", password);
 let attempts = 3;
 
 let i = 0;
 let pass;
+
+
 
 do {
   pass = prompt("Enter password");
@@ -89,16 +93,6 @@ do {
     break;
   }
 } while (pass !== null);
-
-
-
-
-
-
-
-
-
-
 
 
 
