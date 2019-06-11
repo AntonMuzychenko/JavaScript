@@ -17,9 +17,9 @@ const Priority = {
      */
   },
   findNoteById(id) {
-      for(let key of notes){
-          if(key.id === id){
-           return key;
+      for(let elem of notes){
+          if (elem.id === id){
+           return elem;
       }
     }
     /*
@@ -38,6 +38,7 @@ const Priority = {
      * Принимает: объект заметки
      * Возвращает: сохраненную заметку
      */
+    return this.note;
   },
   deleteNote(id) {
     for(let i = 0; i < this.notes.length; i++){
